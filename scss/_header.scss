@@ -1,0 +1,43 @@
+.top{
+	background: url(../img/bg.jpg) center no-repeat;
+	background-size: cover;
+	&__item{
+		padding: 172px 0 272px 0;
+		max-width: 70.7377%;
+		@include br2{
+			padding: 72px 0 102px 0;
+		}
+		@include br3{
+			padding: 52px 0 82px 0;
+			max-width: 85.7377%;
+		}
+		@media screen and (max-width: 450px){
+			max-width: 95.7377%;
+		}
+	}
+	h1{
+		font: 48px/56px $HB;
+		color: #fff;
+		padding: 30px 35px;
+		background: rgba(11, 16, 64, .7);
+		@include br2{
+			font-size: 40px;
+			line-height: 50px;
+		}
+		@include br3{
+			font-size: 35px;
+			line-height: 40px;
+			padding: 20px 25px;
+		}
+		@media screen and (max-width: 450px){
+			font-size: 30px;
+		}
+	}
+	.title{
+		background: rgba(255, 255, 255, .7);
+		padding: 20px 35px;
+		@include br3{
+			padding: 20px 25px;
+		}
+	}
+}
